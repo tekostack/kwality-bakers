@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kwality Bakers | Home</title>
+
+  <!-- 1) Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+ <!-- 2) Tailwind via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 3) Tailwind custom config (MUST come after the CDN) -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FBDB93',
+          warmred: '#BE5B50',
+          maroon: '#8A2D3B',
+          burgundy: '#641B2E'
+        },
+        fontFamily: {
+          poppins: ['Poppins','sans-serif']
+        }
+      }
+    }
+  };
+</script>
+
+
+  <!-- 3) AOS for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body class="font-poppins text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-cream fixed w-full z-30 shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="logo.jpeg" alt="Kwality Bakers Logo" class="h-16 w-auto"/>
+        <span class="ml-3 text-2xl font-semibold text-maroon">Kwality Bakers</span>
+      </a>      
+      <nav class="hidden md:flex space-x-6 text-lg font-medium">
+        <a href="index.html" class="hover:text-warmred transition">Home</a>
+        <a href="about.html" class="hover:text-warmred transition">About</a>
+        <a href="menu.html" class="hover:text-warmred transition">Menu</a>
+        <a href="gallery.html" class="hover:text-warmred transition">Gallery</a>
+        <a href="testimonials.html" class="hover:text-warmred transition">Testimonials</a>
+        <a href="contact.html" class="hover:text-warmred transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <!-- Simple hamburger icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden bg-cream">
+      <a href="index.html" class="block p-4 border-b">Home</a>
+      <a href="about.html" class="block p-4 border-b">About</a>
+      <a href="menu.html" class="block p-4 border-b">Menu</a>
+      <a href="gallery.html" class="block p-4 border-b">Gallery</a>
+      <a href="testimonials.html" class="block p-4 border-b">Testimonials</a>
+      <a href="contact.html" class="block p-4">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative h-screen bg-center bg-cover"
+           style="background-image: url('storefront.jpeg');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 h-full">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-down">
+        Welcome to Kwality Bakers
+      </h1>
+      <p class="text-xl md:text-2xl mb-6" data-aos="fade-up" data-aos-delay="200">
+        Always Fresh. Always Delicious.
+      </p>
+      <div class="space-x-4" data-aos="zoom-in" data-aos-delay="400">
+        <a href="menu.html"
+           class="px-6 py-3 bg-warmred hover:bg-burgundy rounded text-white font-semibold transition">
+          View Menu
+        </a>
+        <a href="contact.html"
+           class="px-6 py-3 border-2 border-white hover:bg-white hover:text-black rounded text-white font-semibold transition">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BEST‑SELLERS -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8" data-aos="fade-up">Our Best Sellers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- EXAMPLE ITEM -->
+        <div class="bg-white rounded-lg shadow p-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="cake1.jpg" alt="Pineapple Cake"
+               class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Pineapple Cake</h3>
+          <p class="text-gray-600">Fresh pineapple chunks layered inside whipped cream frosting.</p>
+        </div>
+         <!-- Chocolate Glazed Donut -->
+  <div class="bg-white rounded-lg shadow p-6" data-aos="fade-up" data-aos-delay="200">
+    <img src="donut.jpg" alt="Chocolate Glazed Donut"
+         class="w-full h-48 object-cover rounded mb-4">
+    <h3 class="text-xl font-semibold mb-2">Chocolate Glazed Donut</h3>
+    <p class="text-gray-600">Soft donuts topped with rich chocolate glaze and sprinkles.</p>
+  </div>
+  <!-- Paneer Wheel -->
+  <div class="bg-white rounded-lg shadow p-6" data-aos="fade-up" data-aos-delay="300">
+    <img src="paneer.jpg" alt="Paneer Wheel"
+         class="w-full h-48 object-cover rounded mb-4">
+    <h3 class="text-xl font-semibold mb-2">Paneer Wheel</h3>
+    <p class="text-gray-600">Savory stuffed roll filled with spicy paneer and herbs.</p>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS PREVIEW -->
+  <section class="py-16 bg-cream">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8" data-aos="fade-up">What Our Customers Say</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+        <div class="max-w-sm bg-white rounded-lg shadow p-6" data-aos="fade-right">
+          <p class="italic mb-4">“Best bakery in town! The red velvet cake is to die for.”</p>
+          <h4 class="font-semibold">— Nailah Manal</h4>
+        </div>
+        <div class="max-w-sm bg-white rounded-lg shadow p-6" data-aos="fade-left" data-aos-delay="200">
+          <p class="italic mb-4">“Their pizzas and burgers are so tasty, and the ambiance is cozy.”</p>
+          <h4 class="font-semibold">— Maithreyi Sharma</h4>
+        </div>
+      </div>
+      <a href="testimonials.html"
+         class="mt-8 inline-block px-6 py-3 bg-warmred hover:bg-burgundy rounded text-white font-semibold transition"
+         data-aos="zoom-in" data-aos-delay="400">
+        Read More
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer class="bg-maroon text-cream py-8">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-4">
+    <div>
+      <img src="logo.jpeg" alt="Kwality Bakers" class="h-10 mb-4"/>
+      <p>H No. 3‑11‑1/2, Siris Rd, near Kamineni Circle<br/>
+         Sri Shankar Colony, L. B. Nagar, Hyderabad<br/>
+         Telangana 500074</p>
+      <p class="mt-2">Phone: 9100010066</p>
+    </div>
+    <div class="mt-6 md:mt-0">
+      <h4 class="font-semibold mb-4">Look Us Up!</h4>
+      <div class="flex space-x-4">
+        <a href="https://www.zomato.com/hyderabad/kwality-bakers-l-b-nagar" target="_blank" class="hover:text-warmred transition">Zomato</a>
+        <a href="https://www.justdial.com/Hyderabad/Kwality-Bakers-Beside-Abhinandan-Grand-Opp-Pride-Hospital-LB-Nagar/040PXX40-XX40-181231111526-Y1H2_BZDET" target="_blank" class="hover:text-warmred transition">Justdial</a>
+        <a href="https://www.instagram.com/kwalitybakers6/" target="_blank" class="hover:text-warmred transition">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

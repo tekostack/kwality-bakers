@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kwality Bakers | About Us</title>
+  
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Custom Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#FBDB93',
+              warmred: '#BE5B50',
+              maroon: '#8A2D3B',
+              burgundy: '#641B2E'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+  
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  </head>
+  
+<body class="font-poppins text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-cream fixed w-full z-30 shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="logo.jpeg" alt="Kwality Bakers Logo" class="h-16 w-auto"/>
+        <span class="ml-3 text-2xl font-semibold text-maroon">Kwality Bakers</span>
+      </a>   
+      <nav class="hidden md:flex space-x-6 text-lg font-medium">
+        <a href="index.html" class="hover:text-warmred transition">Home</a>
+        <a href="about.html" class="text-warmred font-semibold">About</a>
+        <a href="menu.html" class="hover:text-warmred transition">Menu</a>
+        <a href="gallery.html" class="hover:text-warmred transition">Gallery</a>
+        <a href="testimonials.html" class="hover:text-warmred transition">Testimonials</a>
+        <a href="contact.html" class="hover:text-warmred transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-cream">
+      <a href="index.html" class="block p-4 border-b">Home</a>
+      <a href="about.html" class="block p-4 border-b">About</a>
+      <a href="menu.html" class="block p-4 border-b">Menu</a>
+      <a href="gallery.html" class="block p-4 border-b">Gallery</a>
+      <a href="testimonials.html" class="block p-4 border-b">Testimonials</a>
+      <a href="contact.html" class="block p-4">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- OUR STORY -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img src="storefront.jpeg" alt="Kwality Bakers storefront"
+               class="rounded-lg shadow-lg w-full object-cover h-80"/>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <h2 class="text-4xl font-bold mb-4">Our Story</h2>
+          <p class="mb-4">
+            Founded in 2019 in the heart of L.B. Nagar, Kwality Bakers began with one mission:
+            to deliver fresh, handcrafted bakery delights to our community every single day.
+            From classic cakes and pastries to gourmet burgers and pizzas, we’ve grown
+            by word of mouth—and we’re just getting started!
+          </p>
+          <p>
+            What started as a small family venture has blossomed into your neighborhood
+            go‑to café and bakery. We source quality ingredients, innovate our recipes,
+            and bake with love to make sure every bite is memorable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR MISSION & VALUES -->
+    <section class="py-16 bg-cream">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">Our Mission</h2>
+        <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
+          At Kwality Bakers, our mission is simple: <span class="font-semibold">Always Fresh, Always Delicious.</span>
+          We aim to bring warmth and joy through every pastry and snack,
+          making life’s moments just a bit sweeter.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div data-aos="zoom-in" data-aos-delay="300">
+            <h3 class="text-2xl font-semibold mb-2">Quality Ingredients</h3>
+            <p>We hand‑pick fresh produce and bake in small batches for peak flavor.</p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400">
+            <h3 class="text-2xl font-semibold mb-2">Community Driven</h3>
+            <p>We support local suppliers and love serving neighbors.</p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="500">
+            <h3 class="text-2xl font-semibold mb-2">Customer First</h3>
+            <p>Your satisfaction is our top priority—every order, every time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto text-center px-4" data-aos="fade-up">
+        <h2 class="text-3xl font-semibold mb-4">Ready for a Treat?</h2>
+        <p class="mb-6">Explore our full menu of cakes, snacks, pizzas & more.</p>
+        <a href="menu.html"
+           class="px-8 py-3 bg-warmred hover:bg-burgundy text-white font-semibold rounded transition"
+           data-aos="zoom-in" data-aos-delay="200">
+          See the Menu
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+<footer class="bg-maroon text-cream py-8">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-4">
+    <div>
+      <img src="logo.jpeg" alt="Kwality Bakers" class="h-10 mb-4"/>
+      <p>H No. 3‑11‑1/2, Siris Rd, near Kamineni Circle<br/>
+         Sri Shankar Colony, L. B. Nagar, Hyderabad<br/>
+         Telangana 500074</p>
+      <p class="mt-2">Phone: 9100010066</p>
+    </div>
+    <div class="mt-6 md:mt-0">
+      <h4 class="font-semibold mb-4">Look Us Up!</h4>
+      <div class="flex space-x-4">
+        <a href="https://www.zomato.com/hyderabad/kwality-bakers-l-b-nagar" target="_blank" class="hover:text-warmred transition">Zomato</a>
+        <a href="https://www.justdial.com/Hyderabad/Kwality-Bakers-Beside-Abhinandan-Grand-Opp-Pride-Hospital-LB-Nagar/040PXX40-XX40-181231111526-Y1H2_BZDET" target="_blank" class="hover:text-warmred transition">Justdial</a>
+        <a href="https://www.instagram.com/kwalitybakers6/" target="_blank" class="hover:text-warmred transition">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

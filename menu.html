@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tailwind CDN (load first) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Custom Tailwind Config (must come after CDN script) -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FBDB93',
+          warmred: '#BE5B50',
+          maroon: '#8A2D3B',
+          burgundy: '#641B2E'
+        },
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="font-poppins text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-cream fixed w-full z-30 shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="logo.jpeg" alt="Kwality Bakers Logo" class="h-16 w-auto"/>
+        <span class="ml-3 text-2xl font-semibold text-maroon">Kwality Bakers</span>
+      </a>   
+      <nav class="hidden md:flex space-x-6 text-lg font-medium">
+        <a href="index.html" class="hover:text-warmred transition">Home</a>
+        <a href="about.html" class="hover:text-warmred transition">About</a>
+        <a href="menu.html" class="text-warmred font-semibold">Menu</a>
+        <a href="gallery.html" class="hover:text-warmred transition">Gallery</a>
+        <a href="testimonials.html" class="hover:text-warmred transition">Testimonials</a>
+        <a href="contact.html" class="hover:text-warmred transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-cream">
+      <a href="index.html" class="block p-4 border-b">Home</a>
+      <a href="about.html" class="block p-4 border-b">About</a>
+      <a href="menu.html" class="block p-4 border-b">Menu</a>
+      <a href="gallery.html" class="block p-4 border-b">Gallery</a>
+      <a href="testimonials.html" class="block p-4 border-b">Testimonials</a>
+      <a href="contact.html" class="block p-4">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-6" data-aos="fade-down">Our Delicious Menu</h1>
+      <p class="mb-12 text-lg" data-aos="fade-up" data-aos-delay="100">
+        Freshly baked, expertly cooked, and always satisfying. Here's what we're serving today!
+      </p>
+
+      <!-- MENU GRID -->
+      <div class="flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      
+
+        <!-- BURGERS -->
+        <div data-aos="fade-up">
+          <h2 class="text-2xl font-semibold text-maroon mb-3">🍔 Burgers</h2>
+          <ul class="space-y-1">
+            <li>Veg Burger – ₹60</li>
+            <li>Cheese Burger – ₹80</li>
+            <li>Paneer Burger – ₹90</li>
+            <li>Chicken Burger – ₹100</li>
+          </ul>
+        </div>
+
+        <!-- PIZZAS -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h2 class="text-2xl font-semibold text-maroon mb-3">🍕 Pizzas</h2>
+          <ul class="space-y-1">
+            <li>Veg Pizza – ₹120</li>
+            <li>Cheese Corn Pizza – ₹140</li>
+            <li>Paneer Pizza – ₹150</li>
+            <li>Chicken Pizza – ₹160</li>
+          </ul>
+        </div>
+
+        <!-- PASTRIES -->
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-2xl font-semibold text-maroon mb-3">🍰 Pastries</h2>
+          <ul class="space-y-1">
+            <li>Chocolate Pastry – ₹40</li>
+            <li>Black Forest – ₹50</li>
+            <li>Red Velvet – ₹60</li>
+            <li>Butterscotch – ₹50</li>
+          </ul>
+        </div>
+
+        <!-- ICE CREAM -->
+        <div data-aos="fade-up" data-aos-delay="300">
+          <h2 class="text-2xl font-semibold text-maroon mb-3">🍨 Ice Cream</h2>
+          <ul class="space-y-1">
+            <li>Vanilla – ₹30</li>
+            <li>Chocolate – ₹40</li>
+            <li>Strawberry – ₹40</li>
+            <li>Family Pack – ₹120</li>
+          </ul>
+        </div>
+
+        <!-- SNACKS -->
+        <div data-aos="fade-up" data-aos-delay="400">
+          <h2 class="text-2xl font-semibold text-maroon mb-3">🥪 Snacks</h2>
+          <ul class="space-y-1">
+            <li>Samosa – ₹20</li>
+            <li>Puffs (Veg/Paneer/Egg) – ₹25–₹40</li>
+            <li>Cutlet – ₹25</li>
+            <li>Spring Roll – ₹30</li>
+          </ul>
+        </div>
+
+        <!-- DRINKS -->
+        <div data-aos="fade-up" data-aos-delay="500">
+          <h2 class="text-2xl font-semibold text-maroon mb-3">☕ Beverages</h2>
+          <ul class="space-y-1">
+            <li>Tea – ₹10</li>
+            <li>Coffee – ₹15</li>
+            <li>Milkshakes – ₹50</li>
+            <li>Soft Drinks – ₹20–₹30</li>
+          </ul>
+        </div>
+      </div> <!-- closes the flex container -->
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="bg-maroon text-cream py-8">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-4">
+    <div>
+      <img src="logo.jpeg" alt="Kwality Bakers" class="h-10 mb-4"/>
+      <p>H No. 3‑11‑1/2, Siris Rd, near Kamineni Circle<br/>
+         Sri Shankar Colony, L. B. Nagar, Hyderabad<br/>
+         Telangana 500074</p>
+      <p class="mt-2">Phone: 9100010066</p>
+    </div>
+    <div class="mt-6 md:mt-0">
+      <h4 class="font-semibold mb-4">Look Us Up!</h4>
+      <div class="flex space-x-4">
+        <a href="https://www.zomato.com/hyderabad/kwality-bakers-l-b-nagar" target="_blank" class="hover:text-warmred transition">Zomato</a>
+        <a href="https://www.justdial.com/Hyderabad/Kwality-Bakers-Beside-Abhinandan-Grand-Opp-Pride-Hospital-LB-Nagar/040PXX40-XX40-181231111526-Y1H2_BZDET" target="_blank" class="hover:text-warmred transition">Justdial</a>
+        <a href="https://www.instagram.com/kwalitybakers6/" target="_blank" class="hover:text-warmred transition">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- AOS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

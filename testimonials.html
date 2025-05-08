@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kwality Bakers | Testimonials</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CDN first -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Then custom Tailwind config -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FBDB93',
+          warmred: '#BE5B50',
+          maroon: '#8A2D3B',
+          burgundy: '#641B2E'
+        },
+        fontFamily: {
+          poppins: ['Poppins','sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body class="font-poppins text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-cream fixed w-full z-30 shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="logo.jpeg" alt="Kwality Bakers Logo" class="h-16 w-auto"/>
+        <span class="ml-3 text-2xl font-semibold text-maroon">Kwality Bakers</span>
+      </a>   
+      <nav class="hidden md:flex space-x-6 text-lg font-medium">
+        <a href="index.html" class="hover:text-warmred transition">Home</a>
+        <a href="about.html" class="hover:text-warmred transition">About</a>
+        <a href="menu.html" class="hover:text-warmred transition">Menu</a>
+        <a href="gallery.html" class="hover:text-warmred transition">Gallery</a>
+        <a href="testimonials.html" class="text-warmred font-semibold">Testimonials</a>
+        <a href="contact.html" class="hover:text-warmred transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-cream">
+      <a href="index.html" class="block p-4 border-b">Home</a>
+      <a href="about.html" class="block p-4 border-b">About</a>
+      <a href="menu.html" class="block p-4 border-b">Menu</a>
+      <a href="gallery.html" class="block p-4 border-b">Gallery</a>
+      <a href="testimonials.html" class="block p-4 border-b">Testimonials</a>
+      <a href="contact.html" class="block p-4">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-6" data-aos="fade-down">What Our Customers Say</h1>
+      <p class="mb-12 text-lg" data-aos="fade-up" data-aos-delay="100">
+        Hear from those who’ve tasted and loved Kwality Bakers.
+      </p>
+
+      <div class="space-y-16">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-right">
+          <p class="italic text-gray-700 mb-4">“Absolutely the best pastries I’ve ever had. The Black Forest cake melted in my mouth!”</p>
+          <div class="flex items-center justify-center">
+            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 overflow-hidden">
+              <img src="testi1.jpg" alt="Harshitha Devaraju" class="object-cover w-full h-full"/>
+            </div>
+            <div>
+              <h4 class="font-semibold">Harshitha Devaraju</h4>
+              <p class="text-sm text-gray-500">Local Resident</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-left" data-aos-delay="200">
+          <p class="italic text-gray-700 mb-4">“I ordered a margherita pizza for a family gathering—it was a total hit! Fresh, crisp crust and generous toppings.”</p>
+          <div class="flex items-center justify-center">
+            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 overflow-hidden">
+              <img src="testi2.jpg" alt="Ananya Palakodety" class="object-cover w-full h-full"/>
+            </div>
+            <div>
+              <h4 class="font-semibold">Ananya Palakodety</h4>
+              <p class="text-sm text-gray-500">Student</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="400">
+          <p class="italic text-gray-700 mb-4">“Their morning samosas are my go-to. Crispy, spicy, and perfectly priced!”</p>
+          <div class="flex items-center justify-center">
+            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 overflow-hidden">
+              <img src="testi3.jpeg" alt="Pravalika Ramakrishna" class="object-cover w-full h-full"/>
+            </div>
+            <div>
+              <h4 class="font-semibold">Pravalika Ramakrishna</h4>
+              <p class="text-sm text-gray-500">Regular Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="500">
+          <p class="italic text-gray-700 mb-4">“Their burgir is fire. don't play with fire. cuz fire is fire and burgir is fire and I am the truth”</p>
+          <div class="flex items-center justify-center">
+            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 overflow-hidden">
+              <img src="testi4.jpeg" alt="Binod Shetty" class="object-cover w-full h-full"/>
+            </div>
+            <div>
+              <h4 class="font-semibold">Binod Shetty</h4>
+              <p class="text-sm text-gray-500">Majdoor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Centered feedback button -->
+      <div class="mt-12 flex justify-center" data-aos="zoom-in" data-aos-delay="600">
+        <a href="contact.html"
+           class="px-8 py-3 bg-warmred hover:bg-burgundy text-white font-semibold rounded transition">
+          Leave Us Your Feedback
+        </a>
+      </div>    
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="bg-maroon text-cream py-8">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-4">
+    <div>
+      <img src="logo.jpeg" alt="Kwality Bakers" class="h-10 mb-4"/>
+      <p>H No. 3‑11‑1/2, Siris Rd, near Kamineni Circle<br/>
+         Sri Shankar Colony, L. B. Nagar, Hyderabad<br/>
+         Telangana 500074</p>
+      <p class="mt-2">Phone: 9100010066</p>
+    </div>
+    <div class="mt-6 md:mt-0">
+      <h4 class="font-semibold mb-4">Look Us Up!</h4>
+      <div class="flex space-x-4">
+        <a href="https://www.zomato.com/hyderabad/kwality-bakers-l-b-nagar" target="_blank" class="hover:text-warmred transition">Zomato</a>
+        <a href="https://www.justdial.com/Hyderabad/Kwality-Bakers-Beside-Abhinandan-Grand-Opp-Pride-Hospital-LB-Nagar/040PXX40-XX40-181231111526-Y1H2_BZDET" target="_blank" class="hover:text-warmred transition">Justdial</a>
+        <a href="https://www.instagram.com/kwalitybakers6/" target="_blank" class="hover:text-warmred transition">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
